@@ -10,7 +10,7 @@ Install the RHC client tools if you have not already done so:
 >rhc setup
 ```
 
-Create a python application
+Create a ERQX application
 
 ```
 >rhc app create myERQXApp http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
