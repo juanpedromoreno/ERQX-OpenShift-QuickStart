@@ -1,8 +1,0 @@
-#!/bin/bash -x
-
-echo "Building Blog to OpenShift..."
-
-cd ${OPENSHIFT_REPO_DIR}
-activator clean compile stage -Duser.home=${OPENSHIFT_DATA_DIR} -mem 512
-
-echo "All done!"
