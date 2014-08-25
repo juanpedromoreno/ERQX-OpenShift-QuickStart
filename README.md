@@ -12,14 +12,14 @@ sudo gem install rhc
 rhc setup
 ```
 
-Create an ERQX application providing a Git repo containing your static git based blog.
+3. Create an ERQX application providing a Git repo containing your static git based blog.
 For a sample ERQX repo take a look at `https://github.com/jroper/allthatjazz` or any other jekyll based blog.
 
 ```bash
 rhc app create myERQXBlog http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
 ```
 
-Add the QuickStart repo as a remote and merge it into your app
+4. Add the QuickStart repo as a remote and merge it into your app
 
 ```bash
 cd myERQXBlog
@@ -27,7 +27,7 @@ git remote add upstream -m master https://github.com/47deg/ERQX-OpenShift-QuickS
 git pull -s recursive -X theirs upstream master
 ```
 
-Push your local changes
+5. Push your local changes
 
 ```
 git push origin master
