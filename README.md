@@ -30,7 +30,7 @@ git pull -s recursive -X theirs upstream master
 Push your local changes
 
 ```
->git push origin master
+git push origin master
 ```
 
 That's it. You have now an ERQX based blog running on top of Play Framework on RedHat's OpenShift PAAS
