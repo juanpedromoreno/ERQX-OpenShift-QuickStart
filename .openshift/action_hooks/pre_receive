@@ -1,3 +1,0 @@
-#!/bin/bash -x
-
-echo "pre-receive Deploying APP to openshift..."
