@@ -1,4 +1,8 @@
 #!/bin/bash -x
 
+echo "Deploying APP to openshift..."
+
 cd $OPENSHIFT_REPO_DIR
-git clone ${GIT_REPO_BLOG} blog > /tmp/file.log
+git clone ${GIT_REPO_BLOG} blog > ~/play2/logs/deploy.log
+
+echo "Deploy ended"
