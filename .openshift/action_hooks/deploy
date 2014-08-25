@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
+
 cd $OPENSHIFT_REPO_DIR
-git clone https://github.com/rafaparadela/openshift-blog.git blog
+git clone ${GIT_REPO_BLOG} blog > /tmp/file.log
