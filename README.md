@@ -33,6 +33,6 @@ git pull -s recursive -X theirs upstream master
 git push origin master
 ```
 
-That's it. You have now an ERQX based blog running on top of Play Framework on RedHat's OpenShift PAAS
+That's it. You have now an ERQX based blog running on top of Play Framework (v.2.3.3) on RedHat's OpenShift PAAS
 
 http://myERQXBlog-`$yournamespace`.rhcloud.com
