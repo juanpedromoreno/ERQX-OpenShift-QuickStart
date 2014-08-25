@@ -1,0 +1,3 @@
+#!/bin/bash -x
+
+echo "postdeploy Deploying APP to openshift..."
