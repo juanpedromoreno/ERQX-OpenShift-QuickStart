@@ -1,35 +1,38 @@
-Running on OpenShift
+ERQX Play Framework QuickStart for OpenShift
 --------------------
 
-Create an account at https://www.openshift.com
+This is an Open Shift QuickStart that helps you get quickly up and running with an ERQX git based blog on OpenShift
 
-Install the RHC client tools if you have not already done so:
+1. Create an account at https://www.openshift.com
 
-```
->sudo gem install rhc
->rhc setup
-```
+2. Install the RHC client tools if you have not already done so:
 
-Create a ERQX application
-
-```
->rhc app create myblog http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
+```bash
+sudo gem install rhc
+rhc setup
 ```
 
-Add this upstream repo
+Create an ERQX application providing a Git repo containing your static git based blog.
+For a sample ERQX repo take a look at `https://github.com/jroper/allthatjazz` or any other jekyll based blog.
 
-```
->cd myblog
->git remote add upstream -m master https://github.com/47deg/ERQX-OpenShift-QuickStart.git
->git pull -s recursive -X theirs upstream master
+```bash
+rhc app create myERQXBlog http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
 ```
 
-Then push the repo upstream
+Add the QuickStart repo as a remote and merge it into your app
+
+```bash
+cd myERQXBlog
+git remote add upstream -m master https://github.com/47deg/ERQX-OpenShift-QuickStart.git
+git pull -s recursive -X theirs upstream master
+```
+
+Push your local changes
 
 ```
 >git push origin master
 ```
 
-That's it. You can now checkout your application at:
+That's it. You have now an ERQX based blog running on top of Play Framework on RedHat's OpenShift PAAS
 
-http://myblog-$yournamespace.rhcloud.com
+http://myERQXBlog-`$yournamespace`.rhcloud.com
