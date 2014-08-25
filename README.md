@@ -13,7 +13,7 @@ rhc setup
 ```
 
 * Create an ERQX application providing a Git repo containing your static git based blog.
-For a sample ERQX repo take a look at `https://github.com/jroper/allthatjazz` or any other jekyll based blog.
+For a sample ERQX repo take a look at `https://github.com/jroper/allthatjazz.git` or any other jekyll based blog.
 
 ```bash
 rhc app create myERQXBlog http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
