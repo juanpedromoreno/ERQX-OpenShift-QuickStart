@@ -3,23 +3,23 @@ ERQX Play Framework QuickStart for OpenShift
 
 This is an Open Shift QuickStart that helps you get quickly up and running with an ERQX git based blog on OpenShift
 
-1. Create an account at https://www.openshift.com
+* Create an account at https://www.openshift.com
 
-2. Install the RHC client tools if you have not already done so:
+* Install the RHC client tools if you have not already done so:
 
 ```bash
 sudo gem install rhc
 rhc setup
 ```
 
-3. Create an ERQX application providing a Git repo containing your static git based blog.
+* Create an ERQX application providing a Git repo containing your static git based blog.
 For a sample ERQX repo take a look at `https://github.com/jroper/allthatjazz` or any other jekyll based blog.
 
 ```bash
 rhc app create myERQXBlog http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
 ```
 
-4. Add the QuickStart repo as a remote and merge it into your app
+* Add the QuickStart repo as a remote and merge it into your app
 
 ```bash
 cd myERQXBlog
@@ -27,7 +27,7 @@ git remote add upstream -m master https://github.com/47deg/ERQX-OpenShift-QuickS
 git pull -s recursive -X theirs upstream master
 ```
 
-5. Push your local changes
+* Push your local changes
 
 ```
 git push origin master
