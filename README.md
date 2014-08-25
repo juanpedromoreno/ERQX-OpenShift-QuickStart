@@ -13,15 +13,15 @@ Install the RHC client tools if you have not already done so:
 Create a ERQX application
 
 ```
->rhc app create myERQXApp http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
+>rhc app create myblog http://cartreflect-claytondev.rhcloud.com/reflect?github=tyrcho/openshift-cartridge-play2 GIT_REPO_BLOG={your-git-repo-blog-backend}
 ```
 
 Add this upstream repo
 
 ```
->cd myerqxApp
+>cd myblog
 >git remote add upstream -m master https://github.com/47deg/ERQX-OpenShift-QuickStart.git
->git pull -s theirs upstream master
+>git pull -s recursive -X theirs upstream master
 ```
 
 Then push the repo upstream
@@ -32,4 +32,4 @@ Then push the repo upstream
 
 That's it. You can now checkout your application at:
 
-http://myERQXApp-$yournamespace.rhcloud.com
+http://myblog-$yournamespace.rhcloud.com
