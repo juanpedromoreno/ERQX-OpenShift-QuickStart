@@ -1,8 +1,12 @@
 #!/bin/bash -x
+LOG_PATH=~/play2/logs/deploy.log
 
 echo "Deploying Blog to OpenShift..."
 
-cd $OPENSHIFT_REPO_DIR
-git clone ${GIT_REPO_BLOG} blog > ~/play2/logs/deploy.log
+cd $OPENSHIFT_REPO_DIR >> $LOG_PATH
+rm -rf blog >> $LOG_PATH
+mkdir blog >> $LOG_PATH
+cd blog >> $LOG_PATH
+git clone ${GIT_REPO_BLOG} . >> $LOG_PATH
 
 echo "All done!"
