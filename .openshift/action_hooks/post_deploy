@@ -1,4 +1,5 @@
 #!/bin/bash -x
+<<<<<<< HEAD
 LOG_PATH=$OPENSHIFT_PLAY2_LOG_DIR/post_deploy.log
 
 echo "post_deploy Blog to OpenShift..." >> $LOG_PATH
@@ -6,3 +7,16 @@ echo "post_deploy Blog to OpenShift..." >> $LOG_PATH
 echo "Nothing special..." >> $LOG_PATH
 
 echo "post_deploy done!" >> $LOG_PATH
+=======
+LOG_PATH=~/play2/logs/prebuild.log
+
+echo "Post Deploying Blog to OpenShift..."
+
+# cd $OPENSHIFT_REPO_DIR >> $LOG_PATH
+# rm -rf blog >> $LOG_PATH
+# mkdir blog >> $LOG_PATH
+# cd blog >> $LOG_PATH
+# git clone ${GIT_REPO_BLOG} . >> $LOG_PATH
+
+echo "Post Deploying done!"
+>>>>>>> c3894f78faf5f64eb4617c80f0f4028869b0e8bd
