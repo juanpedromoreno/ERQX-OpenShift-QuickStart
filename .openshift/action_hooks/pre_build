@@ -3,10 +3,10 @@ LOG_PATH=$OPENSHIFT_PLAY2_LOG_DIR/prebuild.log
 
 echo "Pre Building Blog to OpenShift..."
 
-cd $OPENSHIFT_REPO_DIR >> $LOG_PATH
-rm -rf blog >> $LOG_PATH
-mkdir blog >> $LOG_PATH
-cd blog >> $LOG_PATH
-git clone ${GIT_REPO_BLOG} . >> $LOG_PATH
+# cd $OPENSHIFT_REPO_DIR >> $LOG_PATH
+# rm -rf blog >> $LOG_PATH
+# mkdir blog >> $LOG_PATH
+# cd blog >> $LOG_PATH
+# git clone ${GIT_REPO_BLOG} . >> $LOG_PATH
 
 echo "Pre Building done!"
