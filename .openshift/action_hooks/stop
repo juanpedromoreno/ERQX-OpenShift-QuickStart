@@ -1,0 +1,10 @@
+#!/bin/bash -x
+LOG_PATH=~/play2/logs/stop.log
+
+echo "Stopping OpenShift App..." >> $LOG_PATH
+
+kill $(cat $OPENSHIFT_REPO_DIR/misc/pid.pid)  >> $LOG_PATH
+rm $OPENSHIFT_REPO_DIR/misc/pid.pid >> $LOG_PATH
+exit 0
+
+echo "Stopped" >> $LOG_PATH

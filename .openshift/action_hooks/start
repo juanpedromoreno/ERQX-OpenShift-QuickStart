@@ -1,0 +1,8 @@
+#!/bin/bash -x
+LOG_PATH=~/play2/logs/start.log
+
+echo "Starting app into OpenShift..." >> $LOG_PATH
+
+nohup $OPENSHIFT_REPO_DIR/target/universal/stage/bin/play -J-Xms128M -J-Xmx500M -Dhttp.address=${OPENSHIFT_PLAY2_IP} -Dhttp.port=8080 -Dpidfile.path=$OPENSHIFT_REPO_DIR/misc/pid.pid &
+
+echo "Started" >> $LOG_PATH

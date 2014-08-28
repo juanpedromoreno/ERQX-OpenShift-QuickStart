@@ -1,0 +1,9 @@
+#!/bin/bash -x
+LOG_PATH=$OPENSHIFT_PLAY2_LOG_DIR/build.log
+
+echo "Building Blog to OpenShift..." >> $LOG_PATH
+
+cd $OPENSHIFT_REPO_DIR
+activator clean stage -Duser.home=${OPENSHIFT_DATA_DIR} -mem 512 >> $LOG_PATH
+
+echo "Building done!" >> $LOG_PATH
