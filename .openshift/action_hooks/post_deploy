@@ -1,1 +1,8 @@
 #!/bin/bash -x
+LOG_PATH=$OPENSHIFT_PLAY2_LOG_DIR/post_deploy.log
+
+echo "post_deploy Blog to OpenShift..." >> $LOG_PATH
+
+echo "Nothing special..." >> $LOG_PATH
+
+echo "post_deploy done!" >> $LOG_PATH
