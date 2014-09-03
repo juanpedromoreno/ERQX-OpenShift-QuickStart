@@ -25,6 +25,7 @@ rhc app create myERQXBlog http://cartreflect-claytondev.rhcloud.com/reflect?gith
 cd myERQXBlog
 git remote add upstream -m master https://github.com/47deg/ERQX-OpenShift-QuickStart.git
 git pull -s recursive -X theirs upstream master
+git commit -a -m "merged with ERQX-OpenShift-QuickStart"
 ```
 
 * Push your local changes
