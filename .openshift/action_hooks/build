@@ -2,7 +2,6 @@
 
 echo "Building Blog to OpenShift..."
 
-cd $OPENSHIFT_REPO_DIR
-activator clean stage -Duser.home=${OPENSHIFT_DATA_DIR} -mem 512
+echo "Nothing special..."
 
 echo "Building done!"
