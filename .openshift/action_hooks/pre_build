@@ -1,5 +1,4 @@
 #!/bin/bash -x
-LOG_PATH=$OPENSHIFT_SCALA_LOG_DIR/prebuild.log
 
 echo "Pre Building Blog to OpenShift..."
 

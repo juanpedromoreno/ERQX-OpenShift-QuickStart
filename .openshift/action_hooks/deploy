@@ -1,13 +1,7 @@
 #!/bin/bash -x
-LOG_PATH=$OPENSHIFT_SCALA_LOG_DIR/deploy.log
 
 echo "Deploying Blog to OpenShift..."
 
 echo "Nothing special..."
-#cd $OPENSHIFT_REPO_DIR >> $LOG_PATH
-#rm -rf blog >> $LOG_PATH
-#mkdir blog >> $LOG_PATH
-#cd blog >> $LOG_PATH
-#git clone ${GIT_REPO_BLOG} . >> $LOG_PATH
 
 echo "Deploying done!"
